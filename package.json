@@ -1,0 +1,25 @@
+{
+  "name": "InstantJS",
+  "displayName": "InstantJs Language Support",
+  "description": "Language Support for all Instant js files",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.77.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "instant",
+      "aliases": ["Instant JS", "instant"],
+      "extensions": [".instant .is .isx .its"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "instant",
+      "scopeName": "source.instant",
+      "path": "./syntaxes/instant.tmLanguage.json"
+    }]
+  }
+}
